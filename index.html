@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
     <title>Coloreus</title>
+    
 </head>
 <body>
     <div class="container">
@@ -18,8 +19,33 @@
             <p>can you guess the color?</p>
         </div>
         <div class="box">
-            <p></p>
+            <div class="color-display"></div>
+            <p id="color-code">#000000</p>
+            <button id="generate-btn">Generate Random Color</button>
+            
+        </div>
+        <div class="control-bars">
+            <div class="slider red">
+                <span>Red</span>
+                <input type="range" id="red" min="0" max="255" value="128">
+                <span id="red-value">128</span>
+            </div>
+            <div class="slider green">
+                <span>Green</span>
+                <input type="range" id="green" min="0" max="255" value="128">
+                <span id="green-value">128</span>
+            </div>
+            <div class="slider blue">
+                <span>Blue</span>
+                <input type="range" id="blue" min="0" max="255" value="128">
+                <span id="blue-value">128</span>
+            </div>
+            <div class="guess"></div>
+            <button id="guess-btn">Guess!</button>
+            <div id="result" aria-live="polite"></div>
         </div>
     </div>
+   
+    <script src="script.js"></script>
 </body>
 </html>
