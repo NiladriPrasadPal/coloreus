@@ -1,4 +1,3 @@
-// Get the HTML elements
 const colorDisplay = document.querySelector(".color-display");
 const colorCode = document.querySelector("#color-code");
 const generateBtn = document.querySelector("#generate-btn");
